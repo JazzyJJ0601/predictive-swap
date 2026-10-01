@@ -1,5 +1,7 @@
 # Predictive Swap Results
 
+**Status:** Overhead only: SwapCache runs alongside generation on Qwen3-8B but is not wired into attention yet, so no speedup or hit rate is claimed.
+
 `python3 results/run_real.py` (Qwen3-8B, local, bf16, 20 new tokens per prompt)
 
 | Metric | Baseline | With SwapCache pre-step |
