@@ -1,0 +1,108 @@
+{
+  "model": "Qwen3-8B",
+  "data": "wikitext-2 test, 16 x 4096 tokens",
+  "scored": "tokens 1024..4095",
+  "page": 16,
+  "window": 128,
+  "full_layers": 2,
+  "rows": [
+    {
+      "policy": "full",
+      "budget": null,
+      "pages": 0,
+      "ppl": 8.7155,
+      "tokens": 49152,
+      "seconds": 16.8
+    },
+    {
+      "policy": "sinks",
+      "budget": 512,
+      "pages": 0,
+      "ppl": 9.9894,
+      "tokens": 49152,
+      "seconds": 43.1,
+      "recall": 0.7322
+    },
+    {
+      "policy": "random",
+      "budget": 512,
+      "pages": 23,
+      "ppl": 10.0502,
+      "tokens": 49152,
+      "seconds": 43.8,
+      "recall": 0.6838
+    },
+    {
+      "policy": "prev",
+      "budget": 512,
+      "pages": 23,
+      "ppl": 9.2019,
+      "tokens": 49152,
+      "seconds": 43.3,
+      "recall": 0.8115
+    },
+    {
+      "policy": "predicted",
+      "budget": 512,
+      "pages": 23,
+      "ppl": 8.8902,
+      "tokens": 49152,
+      "seconds": 47.6,
+      "recall": 0.841
+    },
+    {
+      "policy": "oracle",
+      "budget": 512,
+      "pages": 23,
+      "ppl": 8.8769,
+      "tokens": 49152,
+      "seconds": 43.1,
+      "recall": 0.8452
+    },
+    {
+      "policy": "sinks",
+      "budget": 1024,
+      "pages": 0,
+      "ppl": 9.2181,
+      "tokens": 49152,
+      "seconds": 43.2,
+      "recall": 0.8374
+    },
+    {
+      "policy": "random",
+      "budget": 1024,
+      "pages": 55,
+      "ppl": 9.2453,
+      "tokens": 49152,
+      "seconds": 44.0,
+      "recall": 0.7942
+    },
+    {
+      "policy": "prev",
+      "budget": 1024,
+      "pages": 55,
+      "ppl": 8.8811,
+      "tokens": 49152,
+      "seconds": 43.4,
+      "recall": 0.9013
+    },
+    {
+      "policy": "predicted",
+      "budget": 1024,
+      "pages": 55,
+      "ppl": 8.742,
+      "tokens": 49152,
+      "seconds": 47.8,
+      "recall": 0.9257
+    },
+    {
+      "policy": "oracle",
+      "budget": 1024,
+      "pages": 55,
+      "ppl": 8.7405,
+      "tokens": 49152,
+      "seconds": 43.2,
+      "recall": 0.9287
+    }
+  ]
+}
